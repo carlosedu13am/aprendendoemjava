@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=<device-widht>, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        body{
+            background-color: rgb(52, 168, 235);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+
+        }
+
+        h1{
+            color: yellow;
+        }
+
+        h2{
+            color: white;
+        }
+    </style>
+
+    <script>
+        function questionario(){
+            alert('vamos conhecer a base do javascript')
+            var decisao=confirm('esta pronto para aprender')
+            const pais = 'Brasil'
+            var teste = null
+            let test2
+
+            if(decisao){
+                let none = prompt ('Qual seu nome?:').toUpperCase()
+                let idade = Number.parseInt(
+                    prompt('Qual sua idade')
+            )
+ 
+            let curso = prompt('Qual seu curso:?')
+            let salario = prompt('Digite seu salario:')
+            let nota = Number(prompt('Digite a maior nota que tirou no curso até agora'))
+            
+            document.write('<ul>')
+                document>Writeln('<li>Voce tem ' + idade + 'anos!</li>')
+                document.writeln('<li>Curso escolhido: ${curso.toLowerCase()}</li>')
+                document.writeln('<li>Voce tem '+ nome.length + ' caracteres no seu nome!</li>')
+                document.writeln('<li> Seu pais é ' + pais + '</li>')
+                document.writeln('<li>Seu salario é de: '+number.parseFloat(salario).toFixed(2)+'</li>')
+            document.write('</ul>')
+
+            console.log(typeof nome)
+            console.log(typeof decisao)
+            console.log(typeof idade)
+            console.log(typeof curso)
+            console.log(typeof teste)
+            console.log(typeof teste2)
+
+
+        }else{
+            alert('Que pena querido aluno, que sabe na proxima!')
+            document.writeln('<h1>Sistema encerrado.. recarregue a pagina..</h1>')
+            alert(decisao)
+            alert(nome)
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>sistema de questionario</h1>
+<button onclick="questionario()">iniciar sistema</button>
+</body>
+</html>
